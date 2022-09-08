@@ -13,9 +13,8 @@ steps:
 - script: |
     which java
     java -version
-    echo JAVA_HOME_8_x86=$JAVA_HOME_8_X86
+    echo JAVA_HOME_8_x86=$JAVA_HOME_8_X64
     echo JAVA_HOME=$JAVA_HOME
-    javac
   displayName: 'Show Release Number'
 - task: JavaToolInstaller@0
   inputs:
